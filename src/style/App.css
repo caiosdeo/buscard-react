@@ -1,0 +1,74 @@
+.centered {
+  /* height: 100vh; Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: rgba(0,0,0,0.90);
+  padding: 30px;
+  margin: 40px;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.brand {
+  height: 20vh;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+}
+
+.card-title {
+  font-size: 18px;
+  display: flex;
+  font-weight: bold;
+}
+
+.card {
+  width: 60%;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 1;
+  border-radius: 8px;
+}
+
+.card-content {
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+td {
+  width: 150px;
+  text-align: center;
+  padding: 1px;
+}
+
+.left-col {
+  text-align: left;
+}
+
+.btn {
+  border: none;
+  border: 1px solid black;
+  padding: 10px 12px;
+  background-color: white;
+  transition-duration: 0.2s;
+  font-size: 14px;
+  /* color: white; */
+}
+
+.btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

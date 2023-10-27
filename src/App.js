@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './style/App.css';
+import Navbar from './components/Navbar';
+import Cartao from './components/Cartao';
+import Config from './components/Config';
+import Recarga from './components/Recarga';
+import Footer from './components/Footer';
+import { ToastContainer, Slide } from 'react-toastify';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ToastContainer transition={Slide}></ToastContainer>
+      <BrowserRouter>
+        <div className='content'>
+          <span className="brand centered">Bus Card</span>
+            <Navbar />  
+            <div className="App centered">
+              <Routes>
+                <Route exact path='/' element={<Cartao />}/>
+                <Route path='/recarga' element={<Recarga />}/>
+                <Route path='/config' element={<Config />}/>
+              </Routes>
+            </div>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </>
   );
 }
 

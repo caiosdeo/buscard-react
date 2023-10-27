@@ -1,0 +1,35 @@
+.nav-wrapper {
+    padding: 10px;
+    /* margin: 10px; */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+li a:hover {
+    color: #272727;
+    background-color: white;
+}
+
+.active {
+    color: white;
+    text-decoration: underline;
+}
