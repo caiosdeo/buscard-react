@@ -1,7 +1,7 @@
 {
   "name": "buscard-react",
   "version": "0.1.0",
-  "homepage": "http://caiosdeo.github.io/buscard-react",
+  "homepage": "http://caiosdeo.github.io/buscard-react/#",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
